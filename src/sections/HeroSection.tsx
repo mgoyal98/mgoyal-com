@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import madhur from '@/assets/madhur.jpg';
 import { cn } from '@/utils';
 import { CircleArrowDown } from 'lucide-react';
 import Button from '@/components/Buttons';
@@ -39,8 +38,8 @@ export default function HeroSection() {
           )}
         >
           <Image
-            src={madhur}
-            alt={heroSectionData.name}
+            src={heroSectionData.image.src}
+            alt={heroSectionData.image.alt}
             fill
             className='object-cover h-full w-full'
           />
@@ -50,7 +49,7 @@ export default function HeroSection() {
           <p className='font-medium text-xl text-primary text-center'>
             {heroSectionData.title}
           </p>
-          <h1 className='text-4xl md:text-5xl font-bold text-center'>
+          <h1 className='text-4xl md:text-6xl font-bold text-center'>
             {heroSectionData.name}
           </h1>
           <p className='text-xl md:text-2xl text-foreground/80 text-center'>

@@ -46,7 +46,7 @@ export default function Navbar() {
         <div className='text-2xl font-bold text-primary'>
           <h3>mg</h3>
         </div>
-        <nav>
+        <nav className='hidden md:block'>
           <ul className='flex gap-6'>
             {navLinks.map((link) => (
               <li

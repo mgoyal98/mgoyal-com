@@ -5,15 +5,8 @@ import { cn } from '@/utils';
 import { CircleArrowDown } from 'lucide-react';
 import Button from '@/components/Buttons';
 import { heroSectionData } from '@/data';
-import { useRouter } from 'next/navigation';
 
 export default function HeroSection() {
-  const router = useRouter();
-
-  const handleButtonClick = (href: string) => {
-    router.push(href);
-  };
-
   return (
     <section id='hero' className='relative min-h-screen flex items-center px-5'>
       <div className='container mx-auto flex flex-col items-center justify-center gap-8'>
@@ -62,18 +55,12 @@ export default function HeroSection() {
         </p> */}
 
         <div className='flex gap-4 sm:flex-row flex-col'>
-          <Button
-            onClick={() =>
-              handleButtonClick(heroSectionData.button.primary.href)
-            }
-          >
+          <Button href={heroSectionData.button.primary.href}>
             {heroSectionData.button.primary.label}
           </Button>
           <Button
             variant='secondary'
-            onClick={() =>
-              handleButtonClick(heroSectionData.button.secondary.href)
-            }
+            href={heroSectionData.button.secondary.href}
           >
             {heroSectionData.button.secondary.label}
           </Button>

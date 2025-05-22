@@ -7,6 +7,7 @@ import { CircleArrowDown } from 'lucide-react';
 import Button from '@/components/Buttons';
 import { heroSectionData } from '@/data';
 import { useRouter } from 'next/navigation';
+
 export default function HeroSection() {
   const router = useRouter();
 
@@ -39,7 +40,7 @@ export default function HeroSection() {
         >
           <Image
             src={madhur}
-            alt='Hero'
+            alt={heroSectionData.name}
             fill
             className='object-cover h-full w-full'
           />
@@ -57,17 +58,23 @@ export default function HeroSection() {
           </p>
         </div>
 
-        <p className='text-center w-full lg:w-1/2'>
+        {/* <p className='text-center w-full lg:w-1/2'>
           {heroSectionData.description}
-        </p>
+        </p> */}
 
         <div className='flex gap-4 sm:flex-row flex-col'>
-          <Button onClick={() => handleButtonClick(heroSectionData.button.primary.href)}>
+          <Button
+            onClick={() =>
+              handleButtonClick(heroSectionData.button.primary.href)
+            }
+          >
             {heroSectionData.button.primary.label}
           </Button>
           <Button
             variant='secondary'
-            onClick={() => handleButtonClick(heroSectionData.button.secondary.href)}
+            onClick={() =>
+              handleButtonClick(heroSectionData.button.secondary.href)
+            }
           >
             {heroSectionData.button.secondary.label}
           </Button>

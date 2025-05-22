@@ -1,5 +1,7 @@
 import Navbar from '@/components/Navbar';
+import AboutSection from '@/sections/AboutSection';
 import HeroSection from '@/sections/HeroSection';
+import ScrollObserver from '@/components/ScrollObserver';
 
 export default function Home() {
   return (
@@ -7,6 +9,8 @@ export default function Home() {
       <Navbar />
       <main className='flex-grow'>
         <HeroSection />
+        <AboutSection />
+        <ScrollObserver />
       </main>
     </div>
   );

@@ -11,8 +11,8 @@ export const heroSectionData = {
   designation: 'Full Stack Developer',
   button: {
     primary: {
-      label: 'Get In Touch',
-      href: '#contact',
+      label: 'Get to Know Me',
+      href: '#about',
     },
     secondary: {
       label: 'Download Resume',

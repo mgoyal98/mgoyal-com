@@ -40,11 +40,11 @@ export default function AboutSection() {
             </div>
 
             {/* Content */}
-            <div className='flex-1 w-full h-min flex flex-col gap-6'>
+            <div className='flex-1 w-full h-min flex flex-col gap-8'>
               <h3 className='text-2xl md:text-3xl'>
                 {aboutSectionData.secondSection.title}
               </h3>
-              <p>{aboutSectionData.description}</p>
+              <p>{aboutSectionData.secondSection.description}</p>
               <p>{aboutSectionData.secondSection.closingLine}</p>
               <Button
                 className='w-fit'

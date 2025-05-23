@@ -10,10 +10,10 @@ export default function SkillsSection() {
   return (
     <section id='skills' className='relative min-h-[50vh] flex px-5 pt-40 pb-20'>
       <div className='container mx-auto flex flex-col gap-14'>
-        <SectionTitle title='Skills' />
+        <SectionTitle title={skillsData.title} />
 
         <div className='flex flex-col gap-10'>
-          {skillsData.map((skillSection, index) => (
+          {skillsData.skillSections.map((skillSection, index) => (
             <div key={index} className='flex flex-col gap-10'>
               <div className='flex flex-col gap-6'>
                 <h3 className='text-2xl md:text-3xl'>{skillSection.name}</h3>
@@ -34,7 +34,9 @@ export default function SkillsSection() {
                   ))}
                 </div>
               </div>
-              <RenderConditional condition={index !== skillsData.length - 1}>
+              <RenderConditional
+                condition={index !== skillsData.skillSections.length - 1}
+              >
                 <Divider />
               </RenderConditional>
             </div>

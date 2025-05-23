@@ -9,7 +9,8 @@ export default function AboutSection() {
   return (
     <section id='about' className='relative min-h-[50vh] flex px-5 pt-40 pb-20'>
       <div className='container mx-auto flex flex-col gap-14'>
-        <SectionTitle title='About Me' />
+        <SectionTitle title={aboutSectionData.title} />
+        
         <div className='flex flex-col gap-10'>
           <p className='text-lg md:text-xl'>{aboutSectionData.description}</p>
 

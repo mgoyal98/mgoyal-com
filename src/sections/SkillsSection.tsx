@@ -21,7 +21,7 @@ export default function SkillsSection() {
                   {skillSection.skills.map((skill, index) => (
                     <div
                       key={index}
-                      className='flex flex-col items-center gap-4 p-4 justify-center rounded-lg bg-zinc-900 hover:bg-primary text-foreground hover:text-background transition-all duration-300'
+                      className='flex flex-col items-center gap-4 p-4 justify-center rounded-xl bg-bg-secondary hover:bg-primary text-foreground hover:text-background transition-all duration-300'
                     >
                       <Image
                         src={skill.icon || ''}

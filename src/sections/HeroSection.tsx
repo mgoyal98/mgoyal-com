@@ -9,8 +9,8 @@ import { heroSectionData } from '@/data';
 export default function HeroSection() {
   return (
     <section id='home' className='relative min-h-screen flex items-center px-5'>
-      <div className='container mx-auto flex flex-col items-center justify-center gap-8'>
-        <div className='opacity-40'>
+      <div className='container mx-auto flex flex-col items-center justify-center gap-10'>
+        <div className='absolute top-0 left-0 w-full h-full opacity-40'>
           {/* <!-- Neon Lime Subtle Blob --> */}
           <div className='absolute w-[500px] h-[500px] left-[30%] top-[20%] rounded-full bg-[radial-gradient(circle,#E3F505_10%,transparent_60%)] pulse blur-3xl mix-blend-screen pointer-events-none opacity-60'></div>
 
@@ -38,21 +38,17 @@ export default function HeroSection() {
           />
         </div>
 
-        <div className='flex flex-col gap-4 items-center'>
+        <div className='flex flex-col gap-6 items-center'>
           <p className='font-medium text-xl text-primary text-center'>
             {heroSectionData.title}
           </p>
           <h1 className='text-4xl md:text-6xl font-bold text-center'>
             {heroSectionData.name}
           </h1>
-          <p className='text-xl md:text-2xl text-foreground/80 text-center'>
+          <p className='text-xl md:text-3xl text-foreground/80 text-center'>
             {heroSectionData.designation}
           </p>
         </div>
-
-        {/* <p className='text-center w-full lg:w-1/2'>
-          {heroSectionData.description}
-        </p> */}
 
         <div className='flex gap-4 sm:flex-row flex-col'>
           <Button href={heroSectionData.button.primary.href}>

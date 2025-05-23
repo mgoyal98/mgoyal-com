@@ -34,7 +34,7 @@ body {
 @keyframes pulse-custom {
   0%,
   100% {
-    opacity: 0.6;
+    opacity: 0.65;
     transform: translate(0, 0);
   }
   25% {

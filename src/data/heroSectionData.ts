@@ -1,9 +1,7 @@
-import madhur from '@/assets/madhur.jpg';
-
 export const heroSectionData = {
   id: 1,
   image: {
-    src: madhur,
+    src: '/madhur.jpg',
     alt: 'Madhur Goyal',
   },
   title: 'Hi, My name is',

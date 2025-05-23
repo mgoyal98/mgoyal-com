@@ -44,7 +44,9 @@ export default function Navbar() {
     >
       <div className='container mx-auto flex justify-between items-center'>
         <div className='text-2xl font-bold text-primary'>
-          <h3>mg</h3>
+          <Link href='#home'>
+            <h3>mg</h3>
+          </Link>
         </div>
         <nav className='hidden md:block'>
           <ul className='flex gap-6'>

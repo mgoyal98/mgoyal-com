@@ -8,7 +8,7 @@ import { heroSectionData } from '@/data';
 
 export default function HeroSection() {
   return (
-    <section id='hero' className='relative min-h-screen flex items-center px-5'>
+    <section id='home' className='relative min-h-screen flex items-center px-5'>
       <div className='container mx-auto flex flex-col items-center justify-center gap-8'>
         <div className='opacity-40'>
           {/* <!-- Neon Lime Subtle Blob --> */}

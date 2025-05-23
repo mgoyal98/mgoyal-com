@@ -3,6 +3,7 @@ import AboutSection from '@/sections/AboutSection';
 import HeroSection from '@/sections/HeroSection';
 import ScrollObserver from '@/components/ScrollObserver';
 import SkillsSection from '@/sections/SkillsSection';
+import ExperienceSection from '@/sections/ExperienceSection';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <SkillsSection />
+        <ExperienceSection />
         <ScrollObserver />
       </main>
     </div>

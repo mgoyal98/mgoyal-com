@@ -61,6 +61,8 @@ export default function Navbar() {
               >
                 <Link
                   href={link.href}
+                  target={link.isExternal ? '_blank' : '_self'}
+                  rel={link.isExternal ? 'noopener noreferrer' : ''}
                   className={cn(
                     'group flex flex-col flex-nowrap items-center relative font-medium flex-none overflow-hidden h-6'
                   )}

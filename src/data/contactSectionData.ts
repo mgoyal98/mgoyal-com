@@ -32,4 +32,34 @@ export const contactSectionData = {
       link: 'https://x.com/mgoyal98',
     },
   ],
+  form: {
+    title: 'Send Me A Message',
+    fields: [
+      {
+        placeholder: 'Name',
+        name: 'name',
+        type: 'text',
+        required: true,
+        minLength: 3,
+        maxLength: 100,
+      },
+      {
+        placeholder: 'Email',
+        name: 'email',
+        type: 'email',
+        required: true,
+        minLength: 3,
+      },
+      {
+        placeholder: 'Message',
+        name: 'message',
+        type: 'text',
+        required: true,
+        minLength: 3,
+      },
+    ],
+    buttonText: 'Send Message',
+    successMessage: 'Message sent successfully',
+    errorMessage: 'Failed to send message',
+  },
 };

@@ -70,3 +70,7 @@ body {
   animation: pulse-custom 5s cubic-bezier(0.5, 0, 0.8, 1) infinite;
   animation-delay: 2s;
 }
+
+.grecaptcha-badge {
+  visibility: hidden;
+}

@@ -5,6 +5,8 @@ import ScrollObserver from '@/components/ScrollObserver';
 import SkillsSection from '@/sections/SkillsSection';
 import ExperienceSection from '@/sections/ExperienceSection';
 import ContactSection from '@/sections/ContactSection';
+import { ReCaptchaProvider } from 'next-recaptcha-v3';
+import { Toaster } from 'sonner';
 
 export default function Home() {
   return (
@@ -15,9 +17,14 @@ export default function Home() {
         <AboutSection />
         <SkillsSection />
         <ExperienceSection />
-        <ContactSection />
+        <ReCaptchaProvider
+          reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+        >
+          <ContactSection />
+        </ReCaptchaProvider>
         <ScrollObserver />
       </main>
+      <Toaster position='top-right' richColors duration={3000} />
     </div>
   );
 }

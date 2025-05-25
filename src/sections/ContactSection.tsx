@@ -5,9 +5,13 @@ import SectionTitle from '@/components/SectionTitle';
 import SectionTitleSmall from '@/components/SectionTitleSmall';
 import { contactSectionData } from '@/data/contactSectionData';
 import { LucideProps } from 'lucide-react';
-import { RefAttributes } from 'react';
+import { RefAttributes, useState } from 'react';
 import { ForwardRefExoticComponent } from 'react';
 import Link from 'next/link';
+import Input from '@/components/Input';
+import Button from '@/components/Buttons';
+import { useReCaptcha } from 'next-recaptcha-v3';
+import { toast } from 'sonner';
 
 export function SocialLink({
   link,
@@ -28,7 +32,55 @@ export function SocialLink({
   );
 }
 
+export function ContactCard({ children }: { children: React.ReactNode }) {
+  return (
+    <div className='flex flex-col gap-6 rounded-3xl bg-bg-secondary p-10'>
+      {children}
+    </div>
+  );
+}
+
 export default function ContactSection() {
+  const [formData, setFormData] = useState<Record<string, string>>(
+    contactSectionData.form.fields.reduce(
+      (acc, field) => {
+        acc[field.name] = '';
+        return acc;
+      },
+      {} as Record<string, string>
+    )
+  );
+
+  const [isLoading, setIsLoading] = useState(false);
+
+  const { executeRecaptcha } = useReCaptcha();
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    try {
+      const token = await executeRecaptcha('contact_form');
+
+      const response = await fetch('/api/contact/send', {
+        method: 'POST',
+        body: JSON.stringify({ token, ...formData }),
+      });
+      const data = await response.json();
+      if (data.success) {
+        toast.success(contactSectionData.form.successMessage);
+      } else {
+        toast.error(contactSectionData.form.errorMessage);
+      }
+      console.log(data);
+      console.log(formData);
+    } catch {
+      toast.error(contactSectionData.form.errorMessage);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <section
       id='contact'
@@ -64,7 +116,7 @@ export default function ContactSection() {
 
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-12'>
             {/* Details */}
-            <div className='flex flex-col gap-6 rounded-3xl bg-bg-secondary p-10'>
+            <ContactCard>
               {/* Items */}
               <SectionTitleSmall title={contactSectionData.detailsTitle} />
               {contactSectionData.contactInfo.map((info, index) => (
@@ -80,10 +132,33 @@ export default function ContactSection() {
                   ))}
                 </div>
               </div>
-              
-            </div>
+            </ContactCard>
 
             {/* Form */}
+            <ContactCard>
+              {/* Items */}
+              <SectionTitleSmall title={contactSectionData.form.title} />
+
+              <form onSubmit={handleSubmit} className='flex flex-col gap-6'>
+                {contactSectionData.form.fields.map((field, index) => (
+                  <Input
+                    key={index}
+                    {...field}
+                    value={formData[field.name]}
+                    onChange={(e) =>
+                      setFormData({
+                        ...formData,
+                        [field.name]: e.target.value,
+                      })
+                    }
+                  />
+                ))}
+
+                <Button type='submit' variant='primary' disabled={isLoading}>
+                  {contactSectionData.form.buttonText}
+                </Button>
+              </form>
+            </ContactCard>
           </div>
         </div>
       </div>

@@ -72,8 +72,6 @@ export default function ContactSection() {
       } else {
         toast.error(contactSectionData.form.errorMessage);
       }
-      console.log(data);
-      console.log(formData);
     } catch {
       toast.error(contactSectionData.form.errorMessage);
     } finally {

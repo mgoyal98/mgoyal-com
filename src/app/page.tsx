@@ -4,6 +4,7 @@ import HeroSection from '@/sections/HeroSection';
 import ScrollObserver from '@/components/ScrollObserver';
 import SkillsSection from '@/sections/SkillsSection';
 import ExperienceSection from '@/sections/ExperienceSection';
+import ContactSection from '@/sections/ContactSection';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <AboutSection />
         <SkillsSection />
         <ExperienceSection />
+        <ContactSection />
         <ScrollObserver />
       </main>
     </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { DM_Sans } from 'next/font/google';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import './globals.css';
 
 const dmSans = DM_Sans({
@@ -33,14 +34,12 @@ export default function RootLayout({
           sizes='16x16'
           href='/favicon-16x16.png'
         />
-        <link
-          rel='icon'
-          type='image/png'
-          sizes='256x256'
-          href='/favicon.png'
-        />
+        <link rel='icon' type='image/png' sizes='256x256' href='/favicon.png' />
       </head>
       <body className={`${dmSans.variable} antialiased`}>{children}</body>
+      <GoogleAnalytics
+        gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || ''}
+      />
     </html>
   );
 }

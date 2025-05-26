@@ -4,10 +4,14 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { cn } from '@/utils';
 import { navLinks } from '@/data';
+import NavToggleButton from './NavToggleButton';
+import Divider from './Divider';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('');
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,12 +20,12 @@ export default function Navbar() {
       // Determine active section based on scroll position
       const sections = document.querySelectorAll('section[id]');
       const scrollPosition = window.scrollY + 300;
-      
+
       sections.forEach((section) => {
         const sectionId = section.getAttribute('id');
         const sectionTop = (section as HTMLElement).offsetTop;
         const sectionHeight = (section as HTMLElement).offsetHeight;
-        
+
         if (
           scrollPosition >= sectionTop &&
           scrollPosition < sectionTop + sectionHeight
@@ -90,6 +94,42 @@ export default function Navbar() {
             ))}
           </ul>
         </nav>
+
+        <NavToggleButton
+          isMenuOpen={isMenuOpen}
+          toggleMenuOpen={() => setIsMenuOpen((prev) => !prev)}
+        />
+
+        <div
+          className={cn(
+            'md:hidden absolute top-full left-0 w-full h-[calc(100vh-4rem)] bg-background',
+            'transition-all duration-300 origin-top',
+            isMenuOpen ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'
+          )}
+        >
+          <nav className='flex flex-col px-8'>
+            <ul>
+              {navLinks.map((link) => (
+                <li key={link.name} className='flex flex-col'>
+                  <Link
+                    href={link.href}
+                    className={cn(
+                      'text-2xl font-medium text-foreground py-5 w-full',
+                      'transition-all duration-300 hover:text-primary',
+                      activeSection === link.href.substring(1) && 'text-primary'
+                    )}
+                    onClick={() => setIsMenuOpen(false)}
+                    target={link.isExternal ? '_blank' : '_self'}
+                    rel={link.isExternal ? 'noopener noreferrer' : ''}
+                  >
+                    {link.name}
+                  </Link>
+                  <Divider />
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
   );

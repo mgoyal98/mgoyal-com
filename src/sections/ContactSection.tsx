@@ -82,10 +82,10 @@ export default function ContactSection() {
   return (
     <section
       id='contact'
-      className='relative min-h-[50vh] flex px-6 pt-10 sm:pt-20 pb-10'
+      className='relative min-h-[50vh] flex px-6 pt-22 pb-10'
     >
       {/* Video */}
-      <div className='container mx-auto flex flex-col gap-20'>
+      <div className='container mx-auto flex flex-col gap-22'>
         <div className='rounded-3xl relative overflow-hidden h-60 md:h-[350px] w-full'>
           <div className='absolute w-full h-full flex-none'>
             <video

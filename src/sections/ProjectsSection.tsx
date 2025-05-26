@@ -10,7 +10,7 @@ export default function ProjectsSection() {
   return (
     <section
       id='projects'
-      className='relative min-h-[50vh] flex px-6 pt-10 sm:pt-20 pb-10'
+      className='relative min-h-[50vh] flex px-6 pt-22 pb-10'
     >
       <div className='container mx-auto flex flex-col gap-18'>
         <SectionTitle title={projectsData.title} />

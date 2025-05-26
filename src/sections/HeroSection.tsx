@@ -10,18 +10,18 @@ export default function HeroSection() {
   return (
     <section id='home' className='relative min-h-screen flex items-center px-5'>
       <div className='container mx-auto flex flex-col items-center justify-center gap-10'>
-        <div className='absolute top-0 left-0 w-full h-full opacity-40 -z-10'>
+        <div className='absolute top-0 left-0 w-full h-full opacity-40 -z-10 overflow-x-hidden'>
           {/* <!-- Neon Lime Subtle Blob --> */}
-          <div className='absolute w-[500px] h-[500px] left-[30%] top-[20%] rounded-full bg-[radial-gradient(circle,#80FFAB_10%,transparent_60%)] pulse blur-3xl mix-blend-screen pointer-events-none opacity-60'></div>
+          <div className='absolute w-[250px] h-[250px] md:w-[500px] md:h-[500px] left-[15%] md:left-[30%] top-[20%] rounded-full bg-[radial-gradient(circle,#80FFAB_10%,transparent_60%)] pulse blur-3xl mix-blend-screen pointer-events-none opacity-60'></div>
 
           {/* <!-- Pink Subtle Blob --> */}
-          <div className='absolute w-[400px] h-[400px] left-[50%] top-[30%] rounded-full bg-[radial-gradient(circle,#ff00c8_10%,transparent_60%)] pulse-delayed blur-2xl mix-blend-screen pointer-events-none opacity-60'></div>
+          <div className='absolute w-[250px] h-[250px] md:w-[400px] md:h-[400px] left-[40%] md:left-[50%] top-[30%] rounded-full bg-[radial-gradient(circle,#ff00c8_10%,transparent_60%)] pulse-delayed blur-2xl mix-blend-screen pointer-events-none opacity-60'></div>
 
           {/* <!-- Blue Subtle Blob --> */}
-          <div className='absolute w-[450px] h-[450px] left-[20%] top-[30%] rounded-full bg-[radial-gradient(circle,#00cfff_10%,transparent_60%)] pulse-delayed-2 blur-2xl mix-blend-screen pointer-events-none opacity-60'></div>
+          <div className='absolute w-[225px] h-[225px] md:w-[450px] md:h-[450px] left-[10%] md:left-[20%] top-[30%] rounded-full bg-[radial-gradient(circle,#00cfff_10%,transparent_60%)] pulse-delayed-2 blur-2xl mix-blend-screen pointer-events-none opacity-60'></div>
 
           {/* <!-- White Glow Blob --> */}
-          <div className='absolute w-[600px] h-[600px] left-1/2 top-[30%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,#E3F505_10%,transparent_50%)] pulse-delayed-3 blur-2xl mix-blend-screen pointer-events-none opacity-60'></div>
+          <div className='absolute w-[300px] h-[300px] md:w-[600px] md:h-[600px] left-[25%] md:left-1/2 top-[30%] md:-translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,#E3F505_10%,transparent_50%)] pulse-delayed-3 blur-2xl mix-blend-screen pointer-events-none opacity-60'></div>
         </div>
         {/* photo */}
         <div

@@ -57,6 +57,7 @@ export default function HeroSection() {
           <Button
             variant='secondary'
             href={heroSectionData.button.secondary.href}
+            isExternal={heroSectionData.button.secondary.isExternal}
           >
             {heroSectionData.button.secondary.label}
           </Button>

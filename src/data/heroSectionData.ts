@@ -15,6 +15,7 @@ export const heroSectionData = {
     secondary: {
       label: 'Download Resume',
       href: '/madhur-goyal-full-stack-developer-resume.pdf',
+      isExternal: true,
     },
   },
 };

@@ -11,6 +11,7 @@ interface ButtonProps {
   className?: string;
   onClick?: () => void;
   disabled?: boolean;
+  isExternal?: boolean;
 }
 
 export default function Button({
@@ -21,6 +22,7 @@ export default function Button({
   className,
   onClick,
   disabled,
+  isExternal,
 }: ButtonProps) {
   const baseClasses = cn(
     'py-4 px-8 rounded-full text-lg font-medium cursor-pointer transition-all duration-300 relative group border overflow-hidden',
@@ -60,7 +62,12 @@ export default function Button({
   return (
     <>
       <RenderConditional condition={type === 'link'}>
-        <Link className={baseClasses} href={href || '#'}>
+        <Link
+          className={baseClasses}
+          href={href || '#'}
+          target={isExternal ? '_blank' : '_self'}
+          rel={isExternal ? 'noopener noreferrer' : ''}
+        >
           {getBackdrop()}
           {getChildren()}
         </Link>

@@ -21,7 +21,7 @@ export default function ScrollObserver() {
       {
         root: null, // viewport
         rootMargin: '0px',
-        threshold: 0.3, // trigger when 10% of the target is visible
+        threshold: 0.05, // trigger when 10% of the target is visible
       }
     );
 

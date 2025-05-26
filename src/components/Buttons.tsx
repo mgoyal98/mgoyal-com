@@ -25,7 +25,7 @@ export default function Button({
   isExternal,
 }: ButtonProps) {
   const baseClasses = cn(
-    'py-4 px-8 rounded-full text-lg font-medium cursor-pointer transition-all duration-300 relative group border overflow-hidden',
+    'py-4 px-8 rounded-full text-lg font-medium cursor-pointer transition-all duration-300 relative group/button border overflow-hidden',
     className,
     variant === 'primary' &&
       'bg-primary text-background border-primary hover:text-primary',
@@ -38,7 +38,7 @@ export default function Button({
     <RenderConditional condition={variant === 'primary' && !disabled}>
       <div
         className={cn(
-          'absolute -top-0 left-0 inset-0 bg-background w-[calc(100%+2px)] h-[calc(100%+2px)] scale-x-0 origin-left transition-all duration-300 ease-in-out group-hover:scale-x-100'
+          'absolute -top-0 left-0 inset-0 bg-background w-[calc(100%+2px)] h-[calc(100%+2px)] scale-x-0 origin-left transition-all duration-300 ease-in-out group-hover/button:scale-x-100'
         )}
       ></div>
     </RenderConditional>
@@ -52,7 +52,7 @@ export default function Button({
           className={cn(
             'w-5 h-5 bg-primary text-background -rotate-45 transition-transform duration-300 ease-in-out rounded-full',
             disabled && 'bg-primary/20',
-            !disabled && 'group-hover:rotate-0'
+            !disabled && 'group-hover/button:rotate-0'
           )}
         />
       </RenderConditional>

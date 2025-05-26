@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { DM_Sans } from 'next/font/google';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { Analytics } from '@vercel/analytics/next';
+import { siteMetadata } from '@/data/siteMetadata';
 import './globals.css';
 
 const dmSans = DM_Sans({
@@ -11,8 +12,10 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Madhur Goyal',
-  description: 'ExperiencedFull Stack Developer',
+  title: siteMetadata.title,
+  description: siteMetadata.description,
+  keywords: siteMetadata.keywords,
+  authors: [{ name: siteMetadata.author, url: siteMetadata.url }],
 };
 
 export default function RootLayout({

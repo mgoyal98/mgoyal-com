@@ -1,0 +1,27 @@
+export const siteMetadata = {
+  title: 'Madhur Goyal | Full Stack Developer',
+  description:
+    'An experienced Full Stack Developer passionate about building scalable backend systems and sleek, intuitive frontend interfaces.',
+  keywords: [
+    'Full Stack Developer',
+    'Software Engineer',
+    'Web Developer',
+    'React Developer',
+    'Node.js Developer',
+    'NestJS Developer',
+    'MongoDB Developer',
+    'AWS Developer',
+    'Cloud Developer',
+    'Software Engineer',
+    'Web Developer',
+    'React Developer',
+    'Node.js Developer',
+    'NestJS Developer',
+    'MongoDB Developer',
+    'AWS Developer',
+    'Cloud Developer',
+  ],
+  author: 'Madhur Goyal',
+  url: 'https://mgoyal.com',
+  image: '/cover.png',
+};

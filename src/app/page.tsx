@@ -5,6 +5,7 @@ import ScrollObserver from '@/components/ScrollObserver';
 import SkillsSection from '@/sections/SkillsSection';
 import ExperienceSection from '@/sections/ExperienceSection';
 import ContactSection from '@/sections/ContactSection';
+import ProjectsSection from '@/sections/ProjectsSection';
 import { ReCaptchaProvider } from 'next-recaptcha-v3';
 import { Toaster } from 'sonner';
 import Footer from '@/components/Footer';
@@ -18,6 +19,7 @@ export default function Home() {
           <HeroSection />
           <AboutSection />
           <SkillsSection />
+          <ProjectsSection />
           <ExperienceSection />
           <ReCaptchaProvider
             reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}

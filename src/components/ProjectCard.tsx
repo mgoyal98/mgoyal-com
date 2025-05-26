@@ -44,10 +44,10 @@ export default function ProjectCard({
       </RenderConditional>
 
       {/* Image */}
-      <div className='relative w-full h-52 overflow-hidden rounded-t-3xl'>
+      <div className='relative w-full h-64 overflow-hidden rounded-t-3xl'>
         <Image
           src={image}
-          className='w-full h-52 object-cover transition-transform duration-500 group-hover:scale-105'
+          className='w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105'
           alt='project-image'
           fill
         />

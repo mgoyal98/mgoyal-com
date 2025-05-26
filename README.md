@@ -48,7 +48,7 @@ src/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/mgoyal98/mgoyal.com.git portfolio-template
+git clone https://github.com/mgoyal98/mgoyal-com.git portfolio-template
 cd portfolio-template
 ```
 

@@ -7,7 +7,7 @@ import Button from '@/components/Buttons';
 
 export default function AboutSection() {
   return (
-    <section id='about' className='relative min-h-[50vh] flex px-8 pt-10 sm:pt-20 pb-10'>
+    <section id='about' className='relative min-h-[50vh] flex px-6 pt-10 sm:pt-20 pb-10'>
       <div className='container mx-auto flex flex-col gap-14'>
         <SectionTitle title={aboutSectionData.title} />
         

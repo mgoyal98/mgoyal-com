@@ -38,8 +38,8 @@ export default function Navbar() {
   return (
     <header
       className={cn(
-        'fixed top-0 w-full z-50 transition-all duration-300 px-5',
-        scrolled ? 'bg-background/80 backdrop-blur-md py-4 shadow-lg' : 'py-8'
+        'fixed top-0 w-full z-50 transition-all duration-300 px-8',
+        scrolled ? 'bg-background/80 backdrop-blur-md py-4 shadow-lg' : 'py-6'
       )}
     >
       <div className='container mx-auto flex justify-between items-center'>

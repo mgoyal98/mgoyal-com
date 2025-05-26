@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 export default function SkillsSection() {
   return (
-    <section id='skills' className='relative min-h-[50vh] flex px-5 pt-40 pb-10'>
+    <section id='skills' className='relative min-h-[50vh] flex px-8 pt-10 sm:pt-20 pb-10'>
       <div className='container mx-auto flex flex-col gap-14'>
         <SectionTitle title={skillsData.title} />
 

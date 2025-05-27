@@ -12,6 +12,7 @@ interface ButtonProps {
   onClick?: () => void;
   disabled?: boolean;
   isExternal?: boolean;
+  isStaticFile?: boolean;
 }
 
 export default function Button({
@@ -23,6 +24,7 @@ export default function Button({
   onClick,
   disabled,
   isExternal,
+  isStaticFile,
 }: ButtonProps) {
   const baseClasses = cn(
     'py-4 px-8 rounded-full text-lg font-medium cursor-pointer transition-all duration-300 relative group/button border overflow-hidden',
@@ -59,10 +61,12 @@ export default function Button({
     </div>
   );
 
+  const LinkComponent = isStaticFile ? 'a' : Link;
+
   return (
     <>
       <RenderConditional condition={type === 'link'}>
-        <Link
+        <LinkComponent
           className={baseClasses}
           href={href || '#'}
           target={isExternal ? '_blank' : '_self'}
@@ -70,7 +74,7 @@ export default function Button({
         >
           {getBackdrop()}
           {getChildren()}
-        </Link>
+        </LinkComponent>
       </RenderConditional>
 
       <RenderConditional condition={type !== 'link'}>

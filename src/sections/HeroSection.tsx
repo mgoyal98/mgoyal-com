@@ -58,6 +58,7 @@ export default function HeroSection() {
             variant='secondary'
             href={heroSectionData.button.secondary.href}
             isExternal={heroSectionData.button.secondary.isExternal}
+            isStaticFile={true}
           >
             {heroSectionData.button.secondary.label}
           </Button>

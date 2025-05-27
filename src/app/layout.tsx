@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { DM_Sans } from 'next/font/google';
-import { GoogleAnalytics } from '@next/third-parties/google';
 import { Analytics } from '@vercel/analytics/next';
 import { siteMetadata } from '@/data/siteMetadata';
 import './globals.css';
@@ -39,11 +38,27 @@ export default function RootLayout({
           href='/favicon-16x16.png'
         />
         <link rel='icon' type='image/png' sizes='256x256' href='/favicon.png' />
+
+        <script
+          async={false}
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || ''}`}
+          id='google-analytics'
+          // strategy='afterInteractive'
+        />
+
+        <script id='google-analytics'>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || ''}');
+        `}
+        </script>
       </head>
+
       <body className={`${dmSans.variable} antialiased`}>{children}</body>
-      <GoogleAnalytics
-        gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || ''}
-      />
+
       <Analytics />
     </html>
   );

@@ -21,12 +21,13 @@ export const projectsData = {
       comingSoon: false,
     },
     {
-      image: '/projects/nestjs-blueprint.png',
+      image: 'https://opengraph.githubassets.com/ee808fad35b545c18f0757d0d2e6fb7d20a8b381826004ba03bb0b594c523f09/mgoyal98/nestjs-blueprint',
       title: 'NestJS Blueprint',
       description:
         'Scalable starter template for NestJS applications, featuring built-in integrations for AWS, databases, observability, event-driven architecture, and many more features. It provides a solid foundation to quickly build robust APIs and real-time systems with best practices.',
       tags: ['NestJS', 'TypeScript', 'MongoDB', 'Redis', 'Docker'],
-      comingSoon: true,
+      codeLink: 'https://github.com/mgoyal98/nestjs-blueprint',
+      comingSoon: false,
     },
     {
       image: '/projects/react-scroll-progress-bar.png',

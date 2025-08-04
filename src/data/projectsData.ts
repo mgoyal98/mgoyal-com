@@ -30,16 +30,28 @@ export const projectsData = {
       comingSoon: false,
     },
     {
-      image: '/projects/react-scroll-progress-bar.png',
-      title: 'React Scroll Progress Bar',
+      image: 'https://opengraph.githubassets.com/315fc24725074652a74f7246d316fbcd771be1a4fef9b23fe41015f5839d4565/mgoyal98/e2ee-adapter',
+      title: 'E2EE Adapter',
       description:
-        'A lightweight, customizable React scroll progress bar NPM package for tracking page or container scroll progress. Easy to use, smooth, and highly customizable!',
-      tags: ['React', 'TypeScript', 'Tailwind', 'NPM'],
-      comingSoon: true,
+        'A plug-and-play TypeScript package providing End-to-End Encryption (E2EE) middleware for Express.js and NestJS applications using hybrid encryption (AES-CBC + RSA).',
+      tags: ['NestJS', 'TypeScript', 'Express.js', 'NPM'],
+      codeLink: 'https://github.com/mgoyal98/e2ee-adapter',
+      liveLink: 'https://www.npmjs.com/package/e2ee-adapter',
+      comingSoon: false,
     },
+    // {
+    //   image: '/projects/react-scroll-progress-bar.png',
+    //   title: 'React Scroll Progress Bar',
+    //   description:
+    //     'A lightweight, customizable React scroll progress bar NPM package for tracking page or container scroll progress. Easy to use, smooth, and highly customizable!',
+    //   tags: ['React', 'TypeScript', 'Tailwind', 'NPM'],
+    //   comingSoon: true,
+    // },
   ],
   viewAllProjects: {
     title: 'View All Projects',
     link: 'https://github.com/mgoyal98?tab=repositories',
   },
 };
+
+

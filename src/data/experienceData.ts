@@ -2,9 +2,17 @@ export const experienceData = {
   title: 'My Experience',
   experiences: [
     {
+      company: 'SeekOut',
+      position: 'Software Engineer II',
+      timeline: 'Aug 2025 - Present',
+      location: 'Bangalore, India',
+      companyLink: 'https://www.seekout.com/',
+      descriptions: [],
+    },
+    {
       company: 'Niyo Solutions',
       position: 'Software Development Engineer 2',
-      timeline: 'Aug 2023 - Present',
+      timeline: 'Aug 2023 - July 2025',
       location: 'Bangalore, India',
       companyLink: 'https://www.goniyo.com/',
       descriptions: [

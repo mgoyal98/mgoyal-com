@@ -8,6 +8,8 @@ export const projectsData = {
         'A modern, offline-first invoice management desktop application for service providers',
       tags: ['Node.js', 'Electron.js', 'React', 'MUI', 'Typescript', 'SQLite'],
       codeLink: 'https://github.com/mgoyal98/quanto-professionals',
+      liveLink: 'https://github.com/mgoyal98/quanto-professionals/releases',
+      viewText: 'Download',
       comingSoon: false,
     },
     {

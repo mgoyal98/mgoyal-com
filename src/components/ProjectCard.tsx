@@ -14,6 +14,7 @@ export interface ProjectCardProps {
   tags: string[];
   codeLink?: string;
   liveLink?: string;
+  viewText?: string;
   comingSoon?: boolean;
 }
 
@@ -24,6 +25,7 @@ export default function ProjectCard({
   tags,
   codeLink,
   liveLink,
+  viewText,
   comingSoon = false,
 }: ProjectCardProps) {
   return (
@@ -86,7 +88,7 @@ export default function ProjectCard({
             {/* Live Preview */}
             <RenderConditional condition={!!liveLink}>
               <Button variant='primary' isExternal href={liveLink}>
-                View
+                {viewText || 'View'}
               </Button>
             </RenderConditional>
           </div>

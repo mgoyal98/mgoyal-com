@@ -2,6 +2,15 @@ export const projectsData = {
   title: 'Featured Work',
   projects: [
     {
+      image: 'https://raw.githubusercontent.com/mgoyal98/quanto-professionals/main/assets/screenshot.png',
+      title: 'Quanto Professionals',
+      description:
+        'A modern, offline-first invoice management desktop application for service providers',
+      tags: ['Node.js', 'Electron.js', 'React', 'MUI', 'Typescript', 'SQLite'],
+      codeLink: 'https://github.com/mgoyal98/quanto-professionals',
+      comingSoon: false,
+    },
+    {
       image: '/projects/pdf-pipeline.png',
       title: 'PDF Pipeline',
       description:

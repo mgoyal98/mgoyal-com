@@ -7,7 +7,14 @@ export const experienceData = {
       timeline: 'Aug 2025 - Present',
       location: 'Bangalore, India',
       companyLink: 'https://www.seekout.com/',
-      descriptions: [],
+      descriptions: [
+        'Built AI-powered recruiter outreach for the SeekOut Recruit platform, including an AI credit-quota system for LLM email-sequence generation and re-architected OpenAI prompts (multi-prompt extraction, structured JSON outputs) that reduced malformed responses and AI costs.',
+        'Shipped the Quick Message feature end-to-end — APIs across 4 microservices plus a React UI — with 1000+ recruiter emails sent within days of launch.',
+        'Led People Insights in Workspaces, unifying candidate results and insights across 6 tabs with interactive drill-down charts for diversity, languages, and skills.',
+        'Building core features for Helix (SeekOut Connect), a candidate-facing AI product: AI Career Coach with voice-to-text, portfolio editor with sharing and analytics, and AI-driven interview flows; owned the Candidate Profile Agent epic.',
+        "Building Spot's Engage outreach stack in Python — Instantly and Microsoft integrations, webhook-based candidate resolution, AI-drafted replies, and a unified metrics API.",
+        'Owned P0 incident response and postmortems for critical production systems.',
+      ],
     },
     {
       company: 'Niyo Solutions',
@@ -19,6 +26,8 @@ export const experienceData = {
         'Led the integration of Federal Bank into the Niyo Global app by developing APIs and microservices, enhancing banking connectivity and platform functionality.',
         'Implemented gRPC for inter-service communication, improving system efficiency and performance.',
         'Quickly ramped up on GoLang and delivered production-ready code for a multi-service project within five months.',
+        'Built an in-house analytics tool that replaced third-party solutions, cutting costs and enabling customized analytics.',
+        'Implemented WebSockets for real-time client-server communication in the stock-based Niyo Money app, improving user interaction and data flow.',
         'Led a team of 2, managing tasks and ensuring on-time project delivery.',
       ],
     },
@@ -51,7 +60,7 @@ export const experienceData = {
     {
       company: 'Freelance Projects',
       position: 'Full Stack Developer',
-      timeline: 'May 2019 - Dec 2020',
+      timeline: 'Apr 2019 - Dec 2020',
       location: 'Remote',
       companyLink: '',
       descriptions: [

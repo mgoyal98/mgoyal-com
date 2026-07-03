@@ -2,6 +2,15 @@ export const skillsData = {
   title: 'Skills',
   skillSections: [
     {
+      name: 'AI & LLM Engineering',
+      skills: [
+        { name: 'OpenAI API', icon: '/skill-icons/openai.svg' },
+        { name: 'Agentic AI', icon: '/skill-icons/agentic-ai.svg' },
+        { name: 'Claude Code', icon: '/skill-icons/claude.svg' },
+        { name: 'Codex', icon: '/skill-icons/codex.svg' },
+      ],
+    },
+    {
       name: 'Backend Development',
       skills: [
         { name: 'Node.js', icon: '/skill-icons/node.svg' },
@@ -9,6 +18,7 @@ export const skillsData = {
         { name: 'Nest.js', icon: '/skill-icons/nest.svg' },
         { name: 'TypeScript', icon: '/skill-icons/ts.svg' },
         { name: 'MongoDB', icon: '/skill-icons/mongo.svg' },
+        { name: 'PostgreSQL', icon: '/skill-icons/postgres.svg' },
         { name: 'MySQL', icon: '/skill-icons/mysql.svg' },
         { name: 'GraphQL', icon: '/skill-icons/graphql.svg' },
         { name: 'Python', icon: '/skill-icons/python.svg' },
@@ -31,6 +41,7 @@ export const skillsData = {
         { name: 'Git', icon: '/skill-icons/git.svg' },
         { name: 'Docker', icon: '/skill-icons/docker.svg' },
         { name: 'AWS', icon: '/skill-icons/aws.svg' },
+        { name: 'Azure', icon: '/skill-icons/azure.svg' },
         { name: 'Redis', icon: '/skill-icons/redis.svg' },
         { name: 'Kafka', icon: '/skill-icons/kafka.svg' },
         { name: 'Kubernetes', icon: '/skill-icons/k8.svg' },

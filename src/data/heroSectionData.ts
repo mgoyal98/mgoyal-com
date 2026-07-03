@@ -6,7 +6,7 @@ export const heroSectionData = {
   },
   title: 'Hi, My name is',
   name: 'Madhur Goyal',
-  designation: 'Full Stack Developer',
+  designation: 'Full Stack Developer · Building AI-Powered Products',
   button: {
     primary: {
       label: 'Get to Know Me',

@@ -48,8 +48,8 @@ export default function Navbar() {
     >
       <div className='container mx-auto flex justify-between items-center'>
         <div className='text-2xl font-bold text-primary'>
-          <Link href='#home'>
-            <h3>mg</h3>
+          <Link href='#home' aria-label='Madhur Goyal'>
+            <span>mg</span>
           </Link>
         </div>
         <nav className='hidden md:block'>

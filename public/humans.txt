@@ -1,0 +1,9 @@
+/* TEAM */
+Developer: Madhur Goyal
+Site: https://mgoyal.com
+Contact: hi@mgoyal.com
+Location: Bengaluru, India
+
+/* SITE */
+Stack: Next.js, React, TypeScript, Tailwind CSS
+Hosting: Vercel

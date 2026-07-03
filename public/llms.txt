@@ -1,0 +1,28 @@
+# Madhur Goyal
+
+> Full Stack Developer & AI Engineer in Bengaluru, India — 5+ years building AI-powered products and scalable platforms across fintech and HR tech.
+
+Madhur Goyal is a Software Engineer II at SeekOut, where he builds AI-driven recruiter experiences, outreach automation, candidate intelligence systems, and agent-powered workflows. Previously at Niyo (fintech), he led banking integrations (Federal Bank, SBM Bank), real-time systems, and microservices. His stack spans Node.js, TypeScript, Go, Python, React, Next.js, NestJS, MongoDB, PostgreSQL, Kafka, Redis, AWS, Azure, and modern AI tooling (OpenAI API, agentic AI, Claude Code, Codex).
+
+## Pages
+
+- [Portfolio](https://mgoyal.com/): About, skills, featured projects, experience, and contact form
+- [Resume (PDF)](https://mgoyal.com/madhur-goyal-full-stack-developer-resume.pdf): Downloadable resume
+
+## Profiles
+
+- [GitHub](https://github.com/mgoyal98): Open-source projects and code
+- [LinkedIn](https://www.linkedin.com/in/madhur-goyal): Professional profile and experience
+- [X (Twitter)](https://x.com/mgoyal98): Social profile
+
+## Selected projects
+
+- [Quanto Professionals](https://github.com/mgoyal98/quanto-professionals): Offline-first invoice management desktop app (Electron, React, SQLite)
+- [PDF Pipeline](https://github.com/mgoyal98/pdf-pipeline): Automated PDF generation and delivery pipeline (Node.js, SQS, Puppeteer, S3)
+- [DevEase](https://devease.app/): Suite of essential developer tools built with Next.js
+- [NestJS Blueprint](https://github.com/mgoyal98/nestjs-blueprint): Scalable NestJS starter with AWS, observability, and event-driven architecture
+- [E2EE Adapter](https://www.npmjs.com/package/e2ee-adapter): End-to-end encryption middleware for Express/NestJS (npm package)
+
+## Contact
+
+- Email: hi@mgoyal.com

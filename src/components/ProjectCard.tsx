@@ -50,7 +50,7 @@ export default function ProjectCard({
         <Image
           src={image}
           className='w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105'
-          alt='project-image'
+          alt={`${title} — project screenshot`}
           fill
         />
         <div className='absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300'></div>

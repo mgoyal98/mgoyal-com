@@ -2,14 +2,13 @@ export const projectsData = {
   title: 'Featured Work',
   projects: [
     {
-      image: 'https://raw.githubusercontent.com/mgoyal98/quanto-professionals/main/assets/screenshot.png',
-      title: 'Quanto Professionals',
+      image: 'https://opengraph.githubassets.com/315fc24725074652a74f7246d316fbcd771be1a4fef9b23fe41015f5839d4565/mgoyal98/e2ee-adapter',
+      title: 'E2EE Adapter',
       description:
-        'A modern, offline-first invoice management desktop application for service providers',
-      tags: ['Node.js', 'Electron.js', 'React', 'MUI', 'Typescript', 'SQLite'],
-      codeLink: 'https://github.com/mgoyal98/quanto-professionals',
-      liveLink: 'https://github.com/mgoyal98/quanto-professionals/releases',
-      viewText: 'Download',
+        'A plug-and-play TypeScript package providing End-to-End Encryption (E2EE) middleware for Express.js and NestJS applications using hybrid encryption (AES-CBC + RSA).',
+      tags: ['NestJS', 'TypeScript', 'Express.js', 'NPM'],
+      codeLink: 'https://github.com/mgoyal98/e2ee-adapter',
+      liveLink: 'https://www.npmjs.com/package/e2ee-adapter',
       comingSoon: false,
     },
     {
@@ -19,6 +18,17 @@ export const projectsData = {
         'Automated pipeline for generating, customizing, and delivering PDFs from structured data using Node.js and TypeScript.',
       tags: ['Node.js', 'SQS', 'Puppeteer', 'Mustache', 'S3', 'Typescript'],
       codeLink: 'https://github.com/mgoyal98/pdf-pipeline',
+      comingSoon: false,
+    },
+    {
+      image: 'https://raw.githubusercontent.com/mgoyal98/quanto-professionals/main/assets/screenshot.png',
+      title: 'Quanto Professionals',
+      description:
+        'A modern, offline-first invoice management desktop application for service providers',
+      tags: ['Node.js', 'Electron.js', 'React', 'MUI', 'Typescript', 'SQLite'],
+      codeLink: 'https://github.com/mgoyal98/quanto-professionals',
+      liveLink: 'https://github.com/mgoyal98/quanto-professionals/releases',
+      viewText: 'Download',
       comingSoon: false,
     },
     {
@@ -38,16 +48,6 @@ export const projectsData = {
         'Scalable starter template for NestJS applications, featuring built-in integrations for AWS, databases, observability, event-driven architecture, and many more features. It provides a solid foundation to quickly build robust APIs and real-time systems with best practices.',
       tags: ['NestJS', 'TypeScript', 'MongoDB', 'Redis', 'Docker'],
       codeLink: 'https://github.com/mgoyal98/nestjs-blueprint',
-      comingSoon: false,
-    },
-    {
-      image: 'https://opengraph.githubassets.com/315fc24725074652a74f7246d316fbcd771be1a4fef9b23fe41015f5839d4565/mgoyal98/e2ee-adapter',
-      title: 'E2EE Adapter',
-      description:
-        'A plug-and-play TypeScript package providing End-to-End Encryption (E2EE) middleware for Express.js and NestJS applications using hybrid encryption (AES-CBC + RSA).',
-      tags: ['NestJS', 'TypeScript', 'Express.js', 'NPM'],
-      codeLink: 'https://github.com/mgoyal98/e2ee-adapter',
-      liveLink: 'https://www.npmjs.com/package/e2ee-adapter',
       comingSoon: false,
     },
     // {

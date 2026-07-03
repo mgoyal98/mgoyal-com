@@ -5,7 +5,7 @@ export const experienceData = {
       company: 'SeekOut',
       position: 'Software Engineer II',
       timeline: 'Aug 2025 - Present',
-      location: 'Bangalore, India',
+      location: 'Bengaluru, India',
       companyLink: 'https://www.seekout.com/',
       descriptions: [
         'Built AI-powered recruiter outreach for the SeekOut Recruit platform, including an AI credit-quota system for LLM email-sequence generation and re-architected OpenAI prompts (multi-prompt extraction, structured JSON outputs) that reduced malformed responses and AI costs.',
@@ -20,7 +20,7 @@ export const experienceData = {
       company: 'Niyo Solutions',
       position: 'Software Development Engineer 2',
       timeline: 'Aug 2023 - July 2025',
-      location: 'Bangalore, India',
+      location: 'Bengaluru, India',
       companyLink: 'https://www.goniyo.com/',
       descriptions: [
         'Led the integration of Federal Bank into the Niyo Global app by developing APIs and microservices, enhancing banking connectivity and platform functionality.',
@@ -32,7 +32,7 @@ export const experienceData = {
       ],
     },
     {
-      company: 'CBNITS',
+      company: 'CBNITS (Client: Niyo Solutions)',
       position: 'Full Stack Engineer',
       timeline: 'Feb 2022 - Aug 2023',
       location: 'Bengaluru, India',
@@ -45,7 +45,7 @@ export const experienceData = {
       ],
     },
     {
-      company: 'Squareboat',
+      company: 'Squareboat (Client: Niyo Solutions)',
       position: 'Full Stack Developer',
       timeline: 'Dec 2020 - Jan 2022',
       location: 'Gurugram, India',

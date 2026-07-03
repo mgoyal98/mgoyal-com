@@ -15,9 +15,11 @@ import { toast } from 'sonner';
 
 export function SocialLink({
   link,
+  name,
   Icon,
 }: {
   link: string;
+  name: string;
   Icon: ForwardRefExoticComponent<
     Omit<LucideProps, 'ref'> & RefAttributes<SVGSVGElement>
   >;
@@ -25,9 +27,13 @@ export function SocialLink({
   return (
     <Link
       href={link}
+      aria-label={name}
+      title={name}
+      target='_blank'
+      rel='noopener noreferrer'
       className='rounded-full p-4 border border-foreground/10 text-foreground hover:bg-primary hover:border-primary hover:text-background transition-all duration-300 flex items-center justify-center'
     >
-      <Icon className='w-5 h-5' />
+      <Icon className='w-5 h-5' aria-hidden='true' />
     </Link>
   );
 }

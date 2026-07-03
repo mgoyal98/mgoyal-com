@@ -21,14 +21,17 @@ export const contactSectionData = {
   socialLinks: [
     {
       Icon: Linkedin,
+      name: 'LinkedIn',
       link: 'https://www.linkedin.com/in/madhur-goyal',
     },
     {
       Icon: Github,
+      name: 'GitHub',
       link: 'https://github.com/mgoyal98',
     },
     {
       Icon: Twitter,
+      name: 'X (Twitter)',
       link: 'https://x.com/mgoyal98',
     },
   ],

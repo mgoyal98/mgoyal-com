@@ -2,6 +2,16 @@ export const projectsData = {
   title: 'Featured Work',
   projects: [
     {
+      image: '/projects/signal-escape.png',
+      title: 'Signal Escape',
+      description:
+        'A railway timing puzzle where you only choose when each signal departs. 50 hand-built levels, every one verified solvable by a custom solver. Free, offline-first, and under 115 KB on first load.',
+      tags: ['TypeScript', 'Preact', 'Canvas 2D', 'Vite', 'PWA'],
+      liveLink: 'https://play.signalescape.com',
+      viewText: 'Play',
+      comingSoon: false,
+    },
+    {
       image: 'https://opengraph.githubassets.com/315fc24725074652a74f7246d316fbcd771be1a4fef9b23fe41015f5839d4565/mgoyal98/e2ee-adapter',
       title: 'E2EE Adapter',
       description:

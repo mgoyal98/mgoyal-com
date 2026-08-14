@@ -17,6 +17,7 @@ Madhur Goyal is a Software Engineer II at SeekOut, where he builds AI-driven rec
 
 ## Selected projects
 
+- [Signal Escape](https://signalescape.com/): A railway timing puzzle — 50 solver-verified levels, free and offline-first (TypeScript, Preact, Canvas 2D, Vite)
 - [Quanto Professionals](https://github.com/mgoyal98/quanto-professionals): Offline-first invoice management desktop app (Electron, React, SQLite)
 - [PDF Pipeline](https://github.com/mgoyal98/pdf-pipeline): Automated PDF generation and delivery pipeline (Node.js, SQS, Puppeteer, S3)
 - [DevEase](https://devease.app/): Suite of essential developer tools built with Next.js
